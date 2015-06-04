@@ -71,6 +71,7 @@
 		D91055051B20C16B00088A37 /* NicoKit */ = {
 			isa = PBXGroup;
 			children = (
+				D910551F1B20C19200088A37 /* src */,
 				D91055081B20C16B00088A37 /* NicoKit.h */,
 				D91055061B20C16B00088A37 /* Supporting Files */,
 			);
@@ -100,6 +101,13 @@
 				D91055141B20C16B00088A37 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D910551F1B20C19200088A37 /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
