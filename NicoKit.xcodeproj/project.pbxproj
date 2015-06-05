@@ -10,6 +10,18 @@
 		D91055091B20C16B00088A37 /* NicoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D91055081B20C16B00088A37 /* NicoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D910550F1B20C16B00088A37 /* NicoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055031B20C16B00088A37 /* NicoKit.framework */; };
 		D91055161B20C16B00088A37 /* NicoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055151B20C16B00088A37 /* NicoKitTests.swift */; };
+		D91055251B20C39300088A37 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055211B20C39300088A37 /* Alamofire.framework */; };
+		D91055261B20C39300088A37 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055211B20C39300088A37 /* Alamofire.framework */; };
+		D91055271B20C39300088A37 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055221B20C39300088A37 /* Box.framework */; };
+		D91055281B20C39300088A37 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055221B20C39300088A37 /* Box.framework */; };
+		D91055291B20C39300088A37 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055231B20C39300088A37 /* BrightFutures.framework */; };
+		D910552A1B20C39300088A37 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055231B20C39300088A37 /* BrightFutures.framework */; };
+		D910552B1B20C39300088A37 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055241B20C39300088A37 /* Result.framework */; };
+		D910552C1B20C39300088A37 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055241B20C39300088A37 /* Result.framework */; };
+		D91055311B20C3F000088A37 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910552E1B20C3F000088A37 /* Search.swift */; };
+		D91055321B20C3F000088A37 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910552E1B20C3F000088A37 /* Search.swift */; };
+		D91055331B20C3F000088A37 /* NicoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055301B20C3F000088A37 /* NicoKit.swift */; };
+		D91055341B20C3F000088A37 /* NicoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055301B20C3F000088A37 /* NicoKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +41,12 @@
 		D910550E1B20C16B00088A37 /* NicoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91055141B20C16B00088A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91055151B20C16B00088A37 /* NicoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoKitTests.swift; sourceTree = "<group>"; };
+		D91055211B20C39300088A37 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		D91055221B20C39300088A37 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = "<group>"; };
+		D91055231B20C39300088A37 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		D91055241B20C39300088A37 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		D910552E1B20C3F000088A37 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		D91055301B20C3F000088A37 /* NicoKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicoKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91055291B20C39300088A37 /* BrightFutures.framework in Frameworks */,
+				D91055271B20C39300088A37 /* Box.framework in Frameworks */,
+				D91055251B20C39300088A37 /* Alamofire.framework in Frameworks */,
+				D910552B1B20C39300088A37 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +66,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D910550F1B20C16B00088A37 /* NicoKit.framework in Frameworks */,
+				D910552A1B20C39300088A37 /* BrightFutures.framework in Frameworks */,
+				D910552C1B20C39300088A37 /* Result.framework in Frameworks */,
+				D91055281B20C39300088A37 /* Box.framework in Frameworks */,
+				D91055261B20C39300088A37 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +81,7 @@
 			children = (
 				D91055051B20C16B00088A37 /* NicoKit */,
 				D91055121B20C16B00088A37 /* NicoKitTests */,
+				D91055201B20C37000088A37 /* Frameworks */,
 				D91055041B20C16B00088A37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,8 +133,37 @@
 		D910551F1B20C19200088A37 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				D910552D1B20C3F000088A37 /* Endpoint */,
+				D910552F1B20C3F000088A37 /* Entity */,
+				D91055301B20C3F000088A37 /* NicoKit.swift */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		D91055201B20C37000088A37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D91055211B20C39300088A37 /* Alamofire.framework */,
+				D91055221B20C39300088A37 /* Box.framework */,
+				D91055231B20C39300088A37 /* BrightFutures.framework */,
+				D91055241B20C39300088A37 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D910552D1B20C3F000088A37 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				D910552E1B20C3F000088A37 /* Search.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		D910552F1B20C3F000088A37 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91055311B20C3F000088A37 /* Search.swift in Sources */,
+				D91055331B20C3F000088A37 /* NicoKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91055161B20C16B00088A37 /* NicoKitTests.swift in Sources */,
+				D91055341B20C3F000088A37 /* NicoKit.swift in Sources */,
+				D91055321B20C3F000088A37 /* Search.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,25 +391,36 @@
 		D910551A1B20C16B00088A37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NicoKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D910551B1B20C16B00088A37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NicoKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -364,6 +435,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -381,6 +453,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NicoKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
