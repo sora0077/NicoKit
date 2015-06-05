@@ -34,6 +34,11 @@
 		D997619D1B21DFDB00A48209 /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91055671B214C5000088A37 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D997619E1B21DFDB00A48209 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055681B214C5000088A37 /* Result.framework */; };
 		D997619F1B21DFDB00A48209 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91055681B214C5000088A37 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D99761A31B21EFA000A48209 /* LayoutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761A11B21EFA000A48209 /* LayoutKit.framework */; };
+		D99761A41B21EFCC00A48209 /* LayoutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761A11B21EFA000A48209 /* LayoutKit.framework */; };
+		D99761A51B21EFCC00A48209 /* LayoutKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D99761A11B21EFA000A48209 /* LayoutKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D99761A71B21F00500A48209 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99761A61B21F00500A48209 /* SearchResultViewController.swift */; };
+		D99761A81B21F00500A48209 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99761A61B21F00500A48209 /* SearchResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,7 @@
 				D99761951B21DFDB00A48209 /* Ono.framework in Embed Frameworks */,
 				D99761971B21DFDB00A48209 /* SwiftyJSON.framework in Embed Frameworks */,
 				D997619D1B21DFDB00A48209 /* BrightFutures.framework in Embed Frameworks */,
+				D99761A51B21EFCC00A48209 /* LayoutKit.framework in Embed Frameworks */,
 				D997619B1B21DFDB00A48209 /* Box.framework in Embed Frameworks */,
 				D99761991B21DFDB00A48209 /* Alamofire.framework in Embed Frameworks */,
 			);
@@ -84,6 +90,9 @@
 		D97BE88F1B21656600C32D59 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		D99761811B21B11100A48209 /* Ono.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ono.framework; path = Carthage/Build/iOS/Ono.framework; sourceTree = "<group>"; };
 		D997618C1B21DF6400A48209 /* LoggingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggingKit.framework; path = Carthage/Build/iOS/LoggingKit.framework; sourceTree = "<group>"; };
+		D99761A11B21EFA000A48209 /* LayoutKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LayoutKit.framework; path = Carthage/Build/iOS/LayoutKit.framework; sourceTree = "<group>"; };
+		D99761A61B21F00500A48209 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		D99761AD1B21F13100A48209 /* NicoKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NicoKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +105,7 @@
 				D99761941B21DFDB00A48209 /* Ono.framework in Frameworks */,
 				D99761961B21DFDB00A48209 /* SwiftyJSON.framework in Frameworks */,
 				D997619C1B21DFDB00A48209 /* BrightFutures.framework in Frameworks */,
+				D99761A41B21EFCC00A48209 /* LayoutKit.framework in Frameworks */,
 				D997619A1B21DFDB00A48209 /* Box.framework in Frameworks */,
 				D99761981B21DFDB00A48209 /* Alamofire.framework in Frameworks */,
 			);
@@ -110,6 +120,7 @@
 				D910556A1B214C5000088A37 /* Alamofire.framework in Frameworks */,
 				D91055701B214C5000088A37 /* Result.framework in Frameworks */,
 				D97BE8911B21656600C32D59 /* SwiftyJSON.framework in Frameworks */,
+				D99761A31B21EFA000A48209 /* LayoutKit.framework in Frameworks */,
 				D997618E1B21DF6400A48209 /* LoggingKit.framework in Frameworks */,
 				D99761831B21B11100A48209 /* Ono.framework in Frameworks */,
 			);
@@ -146,6 +157,7 @@
 				D910554B1B214B5600088A37 /* Images.xcassets */,
 				D910554D1B214B5600088A37 /* LaunchScreen.xib */,
 				D91055421B214B5600088A37 /* Supporting Files */,
+				D99761A61B21F00500A48209 /* SearchResultViewController.swift */,
 			);
 			path = NicoKitDemo;
 			sourceTree = "<group>";
@@ -153,6 +165,7 @@
 		D91055421B214B5600088A37 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D99761AD1B21F13100A48209 /* NicoKitDemo-Bridging-Header.h */,
 				D91055431B214B5600088A37 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -178,6 +191,7 @@
 		D91055641B214C3800088A37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D99761A11B21EFA000A48209 /* LayoutKit.framework */,
 				D997618C1B21DF6400A48209 /* LoggingKit.framework */,
 				D99761811B21B11100A48209 /* Ono.framework */,
 				D97BE88F1B21656600C32D59 /* SwiftyJSON.framework */,
@@ -291,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91055471B214B5600088A37 /* ViewController.swift in Sources */,
+				D99761A71B21F00500A48209 /* SearchResultViewController.swift in Sources */,
 				D91055451B214B5600088A37 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99761A81B21F00500A48209 /* SearchResultViewController.swift in Sources */,
 				D910555B1B214B5600088A37 /* NicoKitDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -425,6 +442,8 @@
 				INFOPLIST_FILE = NicoKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NicoKitDemo/NicoKitDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -432,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -439,6 +459,7 @@
 				INFOPLIST_FILE = NicoKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NicoKitDemo/NicoKitDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -446,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -458,6 +480,8 @@
 				INFOPLIST_FILE = NicoKitDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NicoKitDemo/NicoKitDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NicoKitDemo.app/NicoKitDemo";
 			};
 			name = Debug;
@@ -466,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -474,6 +499,7 @@
 				INFOPLIST_FILE = NicoKitDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NicoKitDemo/NicoKitDemo-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NicoKitDemo.app/NicoKitDemo";
 			};
 			name = Release;

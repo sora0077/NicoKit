@@ -28,6 +28,31 @@
 		D99761861B21B11A00A48209 /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761841B21B11A00A48209 /* Ono.framework */; };
 		D997618A1B21DF5D00A48209 /* LoggingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761891B21DF5D00A48209 /* LoggingKit.framework */; };
 		D997618B1B21DF5D00A48209 /* LoggingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761891B21DF5D00A48209 /* LoggingKit.framework */; };
+		D99761BC1B22005300A48209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99761BB1B22005300A48209 /* AppDelegate.swift */; };
+		D99761BE1B22005300A48209 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99761BD1B22005300A48209 /* ViewController.swift */; };
+		D99761C31B22005300A48209 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99761C21B22005300A48209 /* Images.xcassets */; };
+		D99761C61B22005300A48209 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99761C41B22005300A48209 /* LaunchScreen.xib */; };
+		D99761D21B22005300A48209 /* NicoKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99761D11B22005300A48209 /* NicoKitDemoTests.swift */; };
+		D99761D91B22008900A48209 /* NicoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055031B20C16B00088A37 /* NicoKit.framework */; };
+		D99761DA1B22008900A48209 /* NicoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91055031B20C16B00088A37 /* NicoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D99761E01B22016900A48209 /* LayoutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761DF1B22016000A48209 /* LayoutKit.framework */; };
+		D99761E11B22016900A48209 /* LayoutKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D99761DF1B22016000A48209 /* LayoutKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D99761E31B2201B800A48209 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99761E21B2201B800A48209 /* SearchResultViewController.swift */; };
+		D99761E41B2201D200A48209 /* LoggingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761891B21DF5D00A48209 /* LoggingKit.framework */; };
+		D99761E51B2201D200A48209 /* LoggingKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D99761891B21DF5D00A48209 /* LoggingKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D99761E61B2201D200A48209 /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761841B21B11A00A48209 /* Ono.framework */; };
+		D99761E71B2201D200A48209 /* Ono.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D99761841B21B11A00A48209 /* Ono.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D99761E81B2201D200A48209 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */; };
+		D99761E91B2201D200A48209 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D99761EA1B2201D200A48209 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055211B20C39300088A37 /* Alamofire.framework */; };
+		D99761EB1B2201D200A48209 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91055211B20C39300088A37 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D99761EC1B2201D200A48209 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055221B20C39300088A37 /* Box.framework */; };
+		D99761ED1B2201D200A48209 /* Box.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91055221B20C39300088A37 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D99761EE1B2201D200A48209 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055231B20C39300088A37 /* BrightFutures.framework */; };
+		D99761EF1B2201D200A48209 /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91055231B20C39300088A37 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D99761F01B2201D200A48209 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055241B20C39300088A37 /* Result.framework */; };
+		D99761F11B2201D200A48209 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91055241B20C39300088A37 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D99761F41B2202AC00A48209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99761F21B2202AC00A48209 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +63,43 @@
 			remoteGlobalIDString = D91055021B20C16B00088A37;
 			remoteInfo = NicoKit;
 		};
+		D99761CC1B22005300A48209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D91054FA1B20C16B00088A37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99761B61B22005300A48209;
+			remoteInfo = NicoKitDemo;
+		};
+		D99761DB1B22008900A48209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D91054FA1B20C16B00088A37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D91055021B20C16B00088A37;
+			remoteInfo = NicoKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D99761DD1B22008900A48209 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D99761DA1B22008900A48209 /* NicoKit.framework in Embed Frameworks */,
+				D99761EF1B2201D200A48209 /* BrightFutures.framework in Embed Frameworks */,
+				D99761EB1B2201D200A48209 /* Alamofire.framework in Embed Frameworks */,
+				D99761F11B2201D200A48209 /* Result.framework in Embed Frameworks */,
+				D99761E71B2201D200A48209 /* Ono.framework in Embed Frameworks */,
+				D99761E11B22016900A48209 /* LayoutKit.framework in Embed Frameworks */,
+				D99761ED1B2201D200A48209 /* Box.framework in Embed Frameworks */,
+				D99761E51B2201D200A48209 /* LoggingKit.framework in Embed Frameworks */,
+				D99761E91B2201D200A48209 /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D91055031B20C16B00088A37 /* NicoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NicoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +117,19 @@
 		D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		D99761841B21B11A00A48209 /* Ono.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ono.framework; path = Carthage/Build/iOS/Ono.framework; sourceTree = "<group>"; };
 		D99761891B21DF5D00A48209 /* LoggingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggingKit.framework; path = Carthage/Build/iOS/LoggingKit.framework; sourceTree = "<group>"; };
+		D99761B71B22005300A48209 /* NicoKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99761BA1B22005300A48209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99761BB1B22005300A48209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D99761BD1B22005300A48209 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D99761C21B22005300A48209 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D99761C51B22005300A48209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D99761CB1B22005300A48209 /* NicoKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99761D01B22005300A48209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99761D11B22005300A48209 /* NicoKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoKitDemoTests.swift; sourceTree = "<group>"; };
+		D99761DE1B22010C00A48209 /* NicoKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NicoKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		D99761DF1B22016000A48209 /* LayoutKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LayoutKit.framework; path = Carthage/Build/iOS/LayoutKit.framework; sourceTree = SOURCE_ROOT; };
+		D99761E21B2201B800A48209 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		D99761F31B2202AC00A48209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +162,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D99761B41B22005300A48209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99761D91B22008900A48209 /* NicoKit.framework in Frameworks */,
+				D99761EE1B2201D200A48209 /* BrightFutures.framework in Frameworks */,
+				D99761EA1B2201D200A48209 /* Alamofire.framework in Frameworks */,
+				D99761F01B2201D200A48209 /* Result.framework in Frameworks */,
+				D99761E61B2201D200A48209 /* Ono.framework in Frameworks */,
+				D99761E01B22016900A48209 /* LayoutKit.framework in Frameworks */,
+				D99761EC1B2201D200A48209 /* Box.framework in Frameworks */,
+				D99761E41B2201D200A48209 /* LoggingKit.framework in Frameworks */,
+				D99761E81B2201D200A48209 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99761C81B22005300A48209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +193,8 @@
 			children = (
 				D91055051B20C16B00088A37 /* NicoKit */,
 				D91055121B20C16B00088A37 /* NicoKitTests */,
+				D99761B81B22005300A48209 /* NicoKitDemo */,
+				D99761CE1B22005300A48209 /* NicoKitDemoTests */,
 				D91055201B20C37000088A37 /* Frameworks */,
 				D91055041B20C16B00088A37 /* Products */,
 			);
@@ -106,6 +205,8 @@
 			children = (
 				D91055031B20C16B00088A37 /* NicoKit.framework */,
 				D910550E1B20C16B00088A37 /* NicoKitTests.xctest */,
+				D99761B71B22005300A48209 /* NicoKitDemo.app */,
+				D99761CB1B22005300A48209 /* NicoKitDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +285,47 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		D99761B81B22005300A48209 /* NicoKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D99761BB1B22005300A48209 /* AppDelegate.swift */,
+				D99761BD1B22005300A48209 /* ViewController.swift */,
+				D99761E21B2201B800A48209 /* SearchResultViewController.swift */,
+				D99761C21B22005300A48209 /* Images.xcassets */,
+				D99761F21B2202AC00A48209 /* Main.storyboard */,
+				D99761C41B22005300A48209 /* LaunchScreen.xib */,
+				D99761B91B22005300A48209 /* Supporting Files */,
+			);
+			path = NicoKitDemo;
+			sourceTree = "<group>";
+		};
+		D99761B91B22005300A48209 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D99761DF1B22016000A48209 /* LayoutKit.framework */,
+				D99761DE1B22010C00A48209 /* NicoKitDemo-Bridging-Header.h */,
+				D99761BA1B22005300A48209 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D99761CE1B22005300A48209 /* NicoKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D99761D11B22005300A48209 /* NicoKitDemoTests.swift */,
+				D99761CF1B22005300A48209 /* Supporting Files */,
+			);
+			path = NicoKitDemoTests;
+			sourceTree = "<group>";
+		};
+		D99761CF1B22005300A48209 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D99761D01B22005300A48209 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -234,6 +376,43 @@
 			productReference = D910550E1B20C16B00088A37 /* NicoKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D99761B61B22005300A48209 /* NicoKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99761D31B22005300A48209 /* Build configuration list for PBXNativeTarget "NicoKitDemo" */;
+			buildPhases = (
+				D99761B31B22005300A48209 /* Sources */,
+				D99761B41B22005300A48209 /* Frameworks */,
+				D99761B51B22005300A48209 /* Resources */,
+				D99761DD1B22008900A48209 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99761DC1B22008900A48209 /* PBXTargetDependency */,
+			);
+			name = NicoKitDemo;
+			productName = NicoKitDemo;
+			productReference = D99761B71B22005300A48209 /* NicoKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D99761CA1B22005300A48209 /* NicoKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99761D61B22005300A48209 /* Build configuration list for PBXNativeTarget "NicoKitDemoTests" */;
+			buildPhases = (
+				D99761C71B22005300A48209 /* Sources */,
+				D99761C81B22005300A48209 /* Frameworks */,
+				D99761C91B22005300A48209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99761CD1B22005300A48209 /* PBXTargetDependency */,
+			);
+			name = NicoKitDemoTests;
+			productName = NicoKitDemoTests;
+			productReference = D99761CB1B22005300A48209 /* NicoKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,6 +428,13 @@
 					D910550D1B20C16B00088A37 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
+					D99761B61B22005300A48209 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					D99761CA1B22005300A48209 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = D99761B61B22005300A48209;
+					};
 				};
 			};
 			buildConfigurationList = D91054FD1B20C16B00088A37 /* Build configuration list for PBXProject "NicoKit" */;
@@ -257,6 +443,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D91054F91B20C16B00088A37;
 			productRefGroup = D91055041B20C16B00088A37 /* Products */;
@@ -265,6 +452,8 @@
 			targets = (
 				D91055021B20C16B00088A37 /* NicoKit */,
 				D910550D1B20C16B00088A37 /* NicoKitTests */,
+				D99761B61B22005300A48209 /* NicoKitDemo */,
+				D99761CA1B22005300A48209 /* NicoKitDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,6 +467,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D910550C1B20C16B00088A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99761B51B22005300A48209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99761F41B2202AC00A48209 /* Main.storyboard in Resources */,
+				D99761C61B22005300A48209 /* LaunchScreen.xib in Resources */,
+				D99761C31B22005300A48209 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99761C91B22005300A48209 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,6 +512,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D99761B31B22005300A48209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99761BE1B22005300A48209 /* ViewController.swift in Sources */,
+				D99761E31B2201B800A48209 /* SearchResultViewController.swift in Sources */,
+				D99761BC1B22005300A48209 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99761C71B22005300A48209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99761D21B22005300A48209 /* NicoKitDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -314,7 +538,36 @@
 			target = D91055021B20C16B00088A37 /* NicoKit */;
 			targetProxy = D91055101B20C16B00088A37 /* PBXContainerItemProxy */;
 		};
+		D99761CD1B22005300A48209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D99761B61B22005300A48209 /* NicoKitDemo */;
+			targetProxy = D99761CC1B22005300A48209 /* PBXContainerItemProxy */;
+		};
+		D99761DC1B22008900A48209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D91055021B20C16B00088A37 /* NicoKit */;
+			targetProxy = D99761DB1B22008900A48209 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D99761C41B22005300A48209 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D99761C51B22005300A48209 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D99761F21B2202AC00A48209 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D99761F31B2202AC00A48209 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D91055171B20C16B00088A37 /* Debug */ = {
@@ -479,6 +732,74 @@
 			};
 			name = Release;
 		};
+		D99761D41B22005300A48209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NicoKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NicoKitDemo/NicoKitDemo-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		D99761D51B22005300A48209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NicoKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NicoKitDemo/NicoKitDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D99761D71B22005300A48209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NicoKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NicoKitDemo.app/NicoKitDemo";
+			};
+			name = Debug;
+		};
+		D99761D81B22005300A48209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NicoKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NicoKitDemo.app/NicoKitDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -508,6 +829,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D99761D31B22005300A48209 /* Build configuration list for PBXNativeTarget "NicoKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99761D41B22005300A48209 /* Debug */,
+				D99761D51B22005300A48209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D99761D61B22005300A48209 /* Build configuration list for PBXNativeTarget "NicoKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99761D71B22005300A48209 /* Debug */,
+				D99761D81B22005300A48209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

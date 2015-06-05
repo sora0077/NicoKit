@@ -7,9 +7,6 @@
    <FileRef
       location = "container:NicoKit.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:NicoKitDemo.xcodeproj">
-   </FileRef>
    <Group
       location = "container:"
       name = "vendor">

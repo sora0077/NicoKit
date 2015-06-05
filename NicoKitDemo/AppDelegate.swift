@@ -10,6 +10,37 @@ import UIKit
 import NicoKit
 import LoggingKit
 
+
+let NicoAPI = API()
+
+protocol Storyboardable {
+    
+    static var storyboardIdentifier: String { get }
+    static var storyboardName: String { get }
+}
+
+func from_storyboard<T: AnyObject where T: Storyboardable>(clazz: T.Type) -> T! {
+    
+    let identifier = T.storyboardIdentifier
+    let name = T.storyboardName
+    
+    let storyboard = UIStoryboard(name: name, bundle: nil)
+    return storyboard.instantiateViewControllerWithIdentifier(identifier) as? T
+}
+
+protocol Xibable {
+    
+    static var xibName: String { get }
+}
+
+func from_xib<T: AnyObject where T: Xibable>(clazz: T.Type, owner: AnyObject? = nil, options: [NSObject: AnyObject]? = nil, atIndex index: Int = 0) -> T! {
+    
+    let name = T.xibName
+    
+    let xib = UINib(nibName: name, bundle: nil)
+    return xib.instantiateWithOwner(owner, options: options)[index] as? T
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,19 +52,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         LOGGING_VERBOSE()
         
-        let api = API()
-        
-        let query = Search.Query(type: .Tag("Sims4"))
-        
-        let search = Search(query: query)
-        
-        api.request(search)
-            .onSuccess { response in
-                Logging.v(response.0.first?.debugDescription)
-            }
-            .onFailure {
-                println($0)
-            }
         
         return true
     }

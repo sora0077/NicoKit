@@ -93,8 +93,12 @@ public final class API {
 
         return promise.future
     }
-
-    public func cancel<T: RequestToken>(clazz: T.Type, f: T -> Bool = { _ in true }) {
+    
+    public func cancel<T: RequestToken>(clazz: T.Type) {
+        cancel(clazz, f: { _ in true })
+    }
+    
+    public func cancel<T: RequestToken>(clazz: T.Type, f: T -> Bool) {
 
         for request in self.execQueue {
             if let token = request.NicoKit_requestToken as? T where f(token) {
