@@ -22,6 +22,12 @@
 		D91055321B20C3F000088A37 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910552E1B20C3F000088A37 /* Search.swift */; };
 		D91055331B20C3F000088A37 /* NicoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055301B20C3F000088A37 /* NicoKit.swift */; };
 		D91055341B20C3F000088A37 /* NicoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055301B20C3F000088A37 /* NicoKit.swift */; };
+		D97BE8931B21657A00C32D59 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */; };
+		D97BE8941B21657A00C32D59 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */; };
+		D99761851B21B11A00A48209 /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761841B21B11A00A48209 /* Ono.framework */; };
+		D99761861B21B11A00A48209 /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761841B21B11A00A48209 /* Ono.framework */; };
+		D997618A1B21DF5D00A48209 /* LoggingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761891B21DF5D00A48209 /* LoggingKit.framework */; };
+		D997618B1B21DF5D00A48209 /* LoggingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761891B21DF5D00A48209 /* LoggingKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,9 @@
 		D91055241B20C39300088A37 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		D910552E1B20C3F000088A37 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		D91055301B20C3F000088A37 /* NicoKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicoKit.swift; sourceTree = "<group>"; };
+		D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		D99761841B21B11A00A48209 /* Ono.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ono.framework; path = Carthage/Build/iOS/Ono.framework; sourceTree = "<group>"; };
+		D99761891B21DF5D00A48209 /* LoggingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggingKit.framework; path = Carthage/Build/iOS/LoggingKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,9 @@
 				D91055271B20C39300088A37 /* Box.framework in Frameworks */,
 				D91055251B20C39300088A37 /* Alamofire.framework in Frameworks */,
 				D910552B1B20C39300088A37 /* Result.framework in Frameworks */,
+				D97BE8931B21657A00C32D59 /* SwiftyJSON.framework in Frameworks */,
+				D997618A1B21DF5D00A48209 /* LoggingKit.framework in Frameworks */,
+				D99761851B21B11A00A48209 /* Ono.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,9 +79,12 @@
 			files = (
 				D910550F1B20C16B00088A37 /* NicoKit.framework in Frameworks */,
 				D910552A1B20C39300088A37 /* BrightFutures.framework in Frameworks */,
+				D97BE8941B21657A00C32D59 /* SwiftyJSON.framework in Frameworks */,
+				D99761861B21B11A00A48209 /* Ono.framework in Frameworks */,
 				D910552C1B20C39300088A37 /* Result.framework in Frameworks */,
 				D91055281B20C39300088A37 /* Box.framework in Frameworks */,
 				D91055261B20C39300088A37 /* Alamofire.framework in Frameworks */,
+				D997618B1B21DF5D00A48209 /* LoggingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +158,9 @@
 		D91055201B20C37000088A37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D99761891B21DF5D00A48209 /* LoggingKit.framework */,
+				D99761841B21B11A00A48209 /* Ono.framework */,
+				D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */,
 				D91055211B20C39300088A37 /* Alamofire.framework */,
 				D91055221B20C39300088A37 /* Box.framework */,
 				D91055231B20C39300088A37 /* BrightFutures.framework */,
@@ -480,6 +498,7 @@
 				D910551B1B20C16B00088A37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D910551C1B20C16B00088A37 /* Build configuration list for PBXNativeTarget "NicoKitTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +507,7 @@
 				D910551E1B20C16B00088A37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

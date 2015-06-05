@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 public class Search {
     
@@ -20,35 +21,164 @@ public class Search {
 
 extension Search: RequestToken {
 
-    public typealias Response = (NSData)
+    public typealias Response = ([Video], Status)
+    public typealias SerializedType = String
     
-    public struct Meta {
-        
+    public var method: Method {
+        return .POST
     }
     
-    
-    public var URLRequest: NSURLRequest {
-        
-        let url = "http://api.search.nicovideo.jp/api/snapshot/"
-        let URL = NSURL(string: url)!
-        let URLRequest = NSURLRequest(URL: URL)
-        let encoding = Alamofire.ParameterEncoding.JSON
-        
-        return encoding.encode(URLRequest, parameters: query.toParameters()).0
+    public var URL: String {
+        return "http://api.search.nicovideo.jp/api/snapshot/"
     }
     
-    public static func transform(request: NSURLRequest, response: NSHTTPURLResponse?, data: NSData) -> Result<Response> {
-        
-        println(response)
-        
-        return Result(data)
-        
-//        if let str = NSString(data: data, encoding: NSUTF8StringEncoding) as? String {
-//            return (str, Meta())
-//        }
-//        return ("", Meta())
+    public var parameters: [String: AnyObject]? {
+        return query.toParameters()
     }
     
+    public var encoding: Encoding {
+        return .JSON
+    }
+    
+    public var resonseEncoding: ResponseEncoding {
+        return .String(NSUTF8StringEncoding)
+    }
+}
+
+extension Search {
+
+    public static func transform(request: NSURLRequest, response: NSHTTPURLResponse?, object: SerializedType) -> Result<Response> {
+        
+        let lines = split(object, isSeparator: { $0 == "\n" })
+        
+        var status: Status!
+        var videos: [Video] = []
+        
+        for l in lines {
+            
+            if let d = l.dataUsingEncoding(NSUTF8StringEncoding) {
+                let json = JSON(data: d)
+                
+                if json["errid"] != nil {
+                    return .Failure(NSError())
+                }
+                
+                if json["endofstream"] == nil {
+                    switch json["type"].stringValue {
+                    case "hits":
+                        for v in json["values"] {
+                            videos.append(Video.fromDictionary(v.1))
+                        }
+                    case "stats":
+                        let v = json["values"][0]
+                        let service = v["service"].stringValue
+                        let total = v["total"].intValue
+                        status = Status(service: service, total: total)
+                    default:
+                        break
+                    }
+                }
+                
+            }
+        }
+        return Result((videos, status))
+    }
+}
+
+public extension Search {
+    
+    public struct Status {
+        
+        public private(set) var service: String
+        public private(set) var total: Int
+    }
+    
+    public struct Video {
+        
+        public private(set) var cmsid: String
+        public private(set) var title: String
+        public private(set) var description: String
+        
+        public private(set) var thumbnail_url: String
+        public private(set) var movie_type: String
+        
+        public private(set) var last_res_body: String?
+        
+        public private(set) var start_time: String
+        public private(set) var length_seconds: Int
+        public private(set) var tags: [String]
+        
+        public private(set) var view_counter: Int
+        public private(set) var mylist_counter: Int
+        public private(set) var comment_counter: Int
+        
+    }
+}
+
+private extension Search.Video {
+    
+    static func fromDictionary(dict: JSON) -> Search.Video {
+        
+        let cmsid = dict["cmsid"].stringValue
+        let title = dict["title"].stringValue
+        let description = dict["description"].stringValue
+        let thumbnail_url = dict["thumbnail_url"].stringValue
+        let movie_type = dict["movie_type"].stringValue
+        let last_res_body = dict["last_res_body"].string
+        let tags = dict["tags"].stringValue
+        
+        let start_time = dict["start_time"].stringValue
+        let length_seconds = dict["length_seconds"].intValue
+        
+        let view_counter = dict["view_counter"].intValue
+        let mylist_counter = dict["mylist_counter"].intValue
+        let comment_counter = dict["comment_counter"].intValue
+        
+        return self(
+            cmsid: cmsid,
+            title: decodeHTMLEntityString(title),
+            description: description,
+            thumbnail_url: thumbnail_url,
+            movie_type: movie_type,
+            last_res_body: last_res_body,
+            start_time: start_time,
+            length_seconds: length_seconds,
+            tags: split(tags) { $0 == " " },
+            view_counter: view_counter,
+            mylist_counter: mylist_counter,
+            comment_counter: comment_counter
+        )
+    }
+    
+    static func decodeHTMLEntityString(string: String) -> String {
+        
+        var string = string.stringByReplacingOccurrencesOfString("&amp;", withString: "&")
+        string = string.stringByReplacingOccurrencesOfString("&quot;", withString: "\"")
+        string = string.stringByReplacingOccurrencesOfString("&lt;", withString: "<")
+        string = string.stringByReplacingOccurrencesOfString("&gt;", withString: ">")
+        return string
+    }
+}
+
+extension Search.Video: DebugPrintable {
+    
+    public var debugDescription: String {
+        let d = [
+            "cmsid": cmsid,
+            "title": title,
+            "description": description,
+            "thumbnail_url": thumbnail_url,
+            "movie_type": movie_type,
+            "last_res_body": last_res_body ?? "nil",
+            "start_time": start_time,
+            "length_seconds": length_seconds,
+            "tags": tags,
+            "view_counter": view_counter,
+            "mylist_counter": mylist_counter,
+            "comment_counter": comment_counter,
+        ]
+        return d.description
+    }
 }
 
 public extension Search {

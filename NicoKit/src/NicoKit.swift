@@ -9,12 +9,40 @@
 import Foundation
 import Alamofire
 import BrightFutures
-//import Result
 
-public typealias URLRequestConvertible = Alamofire.URLRequestConvertible
+public typealias Method = Alamofire.Method
+public typealias Encoding = Alamofire.ParameterEncoding
 public typealias Request = Alamofire.Request
 public typealias Result = BrightFutures.Result
 
+
+extension Result {
+    
+    init(error: NSError) {
+        self = .Failure(error)
+    }
+}
+
+public enum ResponseEncoding {
+    
+    case Data
+    case String(NSStringEncoding?)
+    case JSON(NSJSONReadingOptions)
+    case Custom(Request.Serializer)
+    
+    var serializer: Request.Serializer {
+        switch self {
+        case .Data:
+            return Request.responseDataSerializer()
+        case let .String(encoding):
+            return Request.stringResponseSerializer(encoding: encoding)
+        case let .JSON(options):
+            return Request.JSONResponseSerializer(options: options)
+        case let .Custom(serializer):
+            return serializer
+        }
+    }
+}
 
 /**
 *
@@ -22,49 +50,49 @@ public typealias Result = BrightFutures.Result
 public final class API {
 
     private var execQueue: [Request] = []
+    private let manager: Alamofire.Manager
 
-    public init() {
-
+    public init(configuration: NSURLSessionConfiguration = .defaultSessionConfiguration()) {
+        
+        self.manager = Manager.sharedInstance
     }
-
+    
     public func request<T: RequestToken>(token: T) -> Future<T.Response> {
-        return self.request(token, builder: Alamofire.request)
-    }
-
-    public func request<T: RequestToken>(token: T, builder: URLRequestConvertible -> Request) -> Future<T.Response> {
         let promise = Promise<T.Response>()
 
-        let URLRequest = token.URLRequest
-        let request = builder(URLRequest)
+        let method = token.method
+        let URLRequest = token.URL
+        let parameters = token.parameters
+        let encoding = token.encoding
+        let serializer = token.resonseEncoding.serializer
+        
+        let request = manager.request(method, URLRequest, parameters: parameters, encoding: encoding)
         self.execQueue.append(request)
 
         request.NicoKit_requestToken = token
-
-        request.response { [weak self] (URLRequest, response, data, error) -> Void in
-
+        
+        request.validate().response(serializer: serializer) { [weak self] (URLRequest, response, object, error) -> Void in
+            
             if let s = self {
                 s.execQueue = s.execQueue.filter({ $0 !== request })
             }
-
-            if let data = data as? NSData {
-                let serialized = T.transform(URLRequest, response: response, data: data)
-                switch serialized {
-                case let .Success(box):
-                    promise.success(box.value)
-                case let .Failure(error):
-                    promise.failure(error)
-                }
+            
+            if let error = error {
+                promise.failure(error)
                 return
             }
-
-
-            promise.failure(error ?? NSError())
+            
+            let serialized = T.transform(URLRequest, response: response, object: object as! T.SerializedType)
+            switch serialized {
+            case let .Success(box):
+                promise.success(box.value)
+            case let .Failure(error):
+                promise.failure(error)
+            }
         }
 
         return promise.future
     }
-
-
 
     public func cancel<T: RequestToken>(clazz: T.Type, f: T -> Bool = { _ in true }) {
 
@@ -82,13 +110,17 @@ public final class API {
 public protocol RequestToken: class {
 
     typealias Response
+    typealias SerializedType
 
-    var URLRequest: NSURLRequest { get }
-
-    static func transform(request: NSURLRequest, response: NSHTTPURLResponse?, data: NSData) -> Result<Response>
+    var method: Method { get }
+    var URL: String { get }
+    var parameters: [String: AnyObject]? { get }
+    var encoding: Encoding { get }
+    
+    var resonseEncoding: ResponseEncoding { get }
+    
+    static func transform(request: NSURLRequest, response: NSHTTPURLResponse?, object: SerializedType) -> Result<Response>
 }
-
-
 
 private var AlamofireRequest_NicoKit_requestToken: UInt8 = 0
 private extension Alamofire.Request {

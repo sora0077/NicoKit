@@ -3,6 +3,10 @@
 import UIKit
 import XCPlayground
 import NicoKit
+import Ono
+
+ONOXMLElement()
+
 
 
 var str = "Hello, playgrouna"

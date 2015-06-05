@@ -7,9 +7,21 @@
    <FileRef
       location = "container:NicoKit.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:NicoKitDemo.xcodeproj">
+   </FileRef>
    <Group
       location = "container:"
       name = "vendor">
+      <FileRef
+         location = "group:Carthage/Checkouts/LoggingKit/LoggingKit.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/Ono/Ono.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Carthage/Checkouts/SwiftyJSON/SwiftyJSON.xcodeproj">
+      </FileRef>
       <FileRef
          location = "group:Carthage/Checkouts/Result/Carthage/Checkouts/Box/Box.xcodeproj">
       </FileRef>
