@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Alamofire
+import APIKit
 import SwiftyJSON
 
 public class Search {
@@ -24,12 +24,16 @@ extension Search: RequestToken {
     public typealias Response = ([Video], Status)
     public typealias SerializedType = String
     
-    public var method: Method {
+    public var method: APIKit.Method {
         return .POST
     }
     
     public var URL: String {
         return "http://api.search.nicovideo.jp/api/snapshot/"
+    }
+    
+    public var headers: [String: AnyObject]? {
+        return nil
     }
     
     public var parameters: [String: AnyObject]? {

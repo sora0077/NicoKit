@@ -3,11 +3,9 @@
 import UIKit
 import XCPlayground
 import NicoKit
-import Ono
+import LoggingKit
 
-ONOXMLElement()
-
-
+LOGGING_VERBOSE()
 
 var str = "Hello, playgrouna"
 
@@ -18,13 +16,7 @@ let query = Search.Query(type: .Tag("Sims4"))
 let search = Search(query: query)
 
 api.request(search).onSuccess { response in
-    println(response)
-    if let str = NSString(data: response, encoding: NSUTF8StringEncoding) {
-        println(str)
-        
-    } else {
-        println("empty")
-    }
+    Logging.d(response.0.first)
 }
 
 let aaa = [17]

@@ -12,6 +12,10 @@ class SearchResultViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    deinit {
+        Logging.d("")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

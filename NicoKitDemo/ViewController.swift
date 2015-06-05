@@ -18,14 +18,21 @@ class ViewController: UIViewController {
         
         self.tableView.controller = TableController(responder: self)
         
-        let row1 = UITableView.StyleDefaultRow(text: "検索")
-        row1.didSelectAction = { [weak self] in
-            
-            let vc = from_storyboard(SearchResultViewController.self)
-            self?.navigationController?.pushViewController(vc, animated: true)
+        let definitions: [(String, () -> Void)] = [
+            ("検索", { [weak self] in
+                
+                let vc = from_storyboard(SearchResultViewController.self)
+                self?.navigationController?.pushViewController(vc, animated: true)
+            })
+        ]
+        
+        let rows = definitions.map { text, action -> TableRowBase in
+            let row = UITableView.StyleDefaultRow(text: text)
+            row.didSelectAction = action
+            return row
         }
         
-        self.tableView.controller.sections.first?.append(row1)
+        self.tableView.controller.sections.first?.extend(rows)
     }
 
     override func didReceiveMemoryWarning() {

@@ -12,12 +12,8 @@
 		D91055161B20C16B00088A37 /* NicoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055151B20C16B00088A37 /* NicoKitTests.swift */; };
 		D91055251B20C39300088A37 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055211B20C39300088A37 /* Alamofire.framework */; };
 		D91055261B20C39300088A37 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055211B20C39300088A37 /* Alamofire.framework */; };
-		D91055271B20C39300088A37 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055221B20C39300088A37 /* Box.framework */; };
-		D91055281B20C39300088A37 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055221B20C39300088A37 /* Box.framework */; };
 		D91055291B20C39300088A37 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055231B20C39300088A37 /* BrightFutures.framework */; };
 		D910552A1B20C39300088A37 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055231B20C39300088A37 /* BrightFutures.framework */; };
-		D910552B1B20C39300088A37 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055241B20C39300088A37 /* Result.framework */; };
-		D910552C1B20C39300088A37 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055241B20C39300088A37 /* Result.framework */; };
 		D91055311B20C3F000088A37 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910552E1B20C3F000088A37 /* Search.swift */; };
 		D91055321B20C3F000088A37 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910552E1B20C3F000088A37 /* Search.swift */; };
 		D91055331B20C3F000088A37 /* NicoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055301B20C3F000088A37 /* NicoKit.swift */; };
@@ -46,13 +42,12 @@
 		D99761E91B2201D200A48209 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D99761EA1B2201D200A48209 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055211B20C39300088A37 /* Alamofire.framework */; };
 		D99761EB1B2201D200A48209 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91055211B20C39300088A37 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D99761EC1B2201D200A48209 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055221B20C39300088A37 /* Box.framework */; };
-		D99761ED1B2201D200A48209 /* Box.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91055221B20C39300088A37 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D99761EE1B2201D200A48209 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055231B20C39300088A37 /* BrightFutures.framework */; };
 		D99761EF1B2201D200A48209 /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91055231B20C39300088A37 /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D99761F01B2201D200A48209 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055241B20C39300088A37 /* Result.framework */; };
-		D99761F11B2201D200A48209 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91055241B20C39300088A37 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D99761F41B2202AC00A48209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99761F21B2202AC00A48209 /* Main.storyboard */; };
+		D99762271B221FE600A48209 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99762261B221FD600A48209 /* APIKit.framework */; };
+		D99762281B22216900A48209 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99762261B221FD600A48209 /* APIKit.framework */; };
+		D99762291B22216900A48209 /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D99762261B221FD600A48209 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,11 +84,10 @@
 				D99761DA1B22008900A48209 /* NicoKit.framework in Embed Frameworks */,
 				D99761EF1B2201D200A48209 /* BrightFutures.framework in Embed Frameworks */,
 				D99761EB1B2201D200A48209 /* Alamofire.framework in Embed Frameworks */,
-				D99761F11B2201D200A48209 /* Result.framework in Embed Frameworks */,
 				D99761E71B2201D200A48209 /* Ono.framework in Embed Frameworks */,
 				D99761E11B22016900A48209 /* LayoutKit.framework in Embed Frameworks */,
-				D99761ED1B2201D200A48209 /* Box.framework in Embed Frameworks */,
 				D99761E51B2201D200A48209 /* LoggingKit.framework in Embed Frameworks */,
+				D99762291B22216900A48209 /* APIKit.framework in Embed Frameworks */,
 				D99761E91B2201D200A48209 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -109,9 +103,7 @@
 		D91055141B20C16B00088A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91055151B20C16B00088A37 /* NicoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicoKitTests.swift; sourceTree = "<group>"; };
 		D91055211B20C39300088A37 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		D91055221B20C39300088A37 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = "<group>"; };
 		D91055231B20C39300088A37 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
-		D91055241B20C39300088A37 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		D910552E1B20C3F000088A37 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		D91055301B20C3F000088A37 /* NicoKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicoKit.swift; sourceTree = "<group>"; };
 		D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -130,6 +122,7 @@
 		D99761DF1B22016000A48209 /* LayoutKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LayoutKit.framework; path = Carthage/Build/iOS/LayoutKit.framework; sourceTree = SOURCE_ROOT; };
 		D99761E21B2201B800A48209 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		D99761F31B2202AC00A48209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D99762261B221FD600A48209 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91055291B20C39300088A37 /* BrightFutures.framework in Frameworks */,
-				D91055271B20C39300088A37 /* Box.framework in Frameworks */,
 				D91055251B20C39300088A37 /* Alamofire.framework in Frameworks */,
-				D910552B1B20C39300088A37 /* Result.framework in Frameworks */,
+				D99762271B221FE600A48209 /* APIKit.framework in Frameworks */,
 				D97BE8931B21657A00C32D59 /* SwiftyJSON.framework in Frameworks */,
 				D997618A1B21DF5D00A48209 /* LoggingKit.framework in Frameworks */,
 				D99761851B21B11A00A48209 /* Ono.framework in Frameworks */,
@@ -155,8 +147,6 @@
 				D910552A1B20C39300088A37 /* BrightFutures.framework in Frameworks */,
 				D97BE8941B21657A00C32D59 /* SwiftyJSON.framework in Frameworks */,
 				D99761861B21B11A00A48209 /* Ono.framework in Frameworks */,
-				D910552C1B20C39300088A37 /* Result.framework in Frameworks */,
-				D91055281B20C39300088A37 /* Box.framework in Frameworks */,
 				D91055261B20C39300088A37 /* Alamofire.framework in Frameworks */,
 				D997618B1B21DF5D00A48209 /* LoggingKit.framework in Frameworks */,
 			);
@@ -169,11 +159,10 @@
 				D99761D91B22008900A48209 /* NicoKit.framework in Frameworks */,
 				D99761EE1B2201D200A48209 /* BrightFutures.framework in Frameworks */,
 				D99761EA1B2201D200A48209 /* Alamofire.framework in Frameworks */,
-				D99761F01B2201D200A48209 /* Result.framework in Frameworks */,
 				D99761E61B2201D200A48209 /* Ono.framework in Frameworks */,
 				D99761E01B22016900A48209 /* LayoutKit.framework in Frameworks */,
-				D99761EC1B2201D200A48209 /* Box.framework in Frameworks */,
 				D99761E41B2201D200A48209 /* LoggingKit.framework in Frameworks */,
+				D99762281B22216900A48209 /* APIKit.framework in Frameworks */,
 				D99761E81B2201D200A48209 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,13 +248,12 @@
 		D91055201B20C37000088A37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D99762261B221FD600A48209 /* APIKit.framework */,
 				D99761891B21DF5D00A48209 /* LoggingKit.framework */,
 				D99761841B21B11A00A48209 /* Ono.framework */,
 				D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */,
 				D91055211B20C39300088A37 /* Alamofire.framework */,
-				D91055221B20C39300088A37 /* Box.framework */,
 				D91055231B20C39300088A37 /* BrightFutures.framework */,
-				D91055241B20C39300088A37 /* Result.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

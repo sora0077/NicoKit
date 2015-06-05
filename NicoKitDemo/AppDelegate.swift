@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import NicoKit
-import LoggingKit
 
 
 let NicoAPI = API()
