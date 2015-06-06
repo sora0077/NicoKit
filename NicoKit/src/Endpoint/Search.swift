@@ -24,7 +24,7 @@ extension Search: RequestToken {
     public typealias Response = ([Video], Status)
     public typealias SerializedType = String
     
-    public var method: APIKit.Method {
+    public var method: HTTPMethod {
         return .POST
     }
     
@@ -40,7 +40,7 @@ extension Search: RequestToken {
         return query.toParameters()
     }
     
-    public var encoding: Encoding {
+    public var encoding: RequestEncoding {
         return .JSON
     }
     

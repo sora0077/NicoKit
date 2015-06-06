@@ -29,8 +29,16 @@ class SearchResultViewController: UIViewController {
         NicoAPI.request(search)
             .onSuccess { [weak self] videos, status in
                 if let section = self?.tableView.controller.sections.first {
-                    let rows = videos.map {
-                        UITableView.StyleDefaultRow(text: $0.title)
+                    let rows = videos.map { v -> TableRowBase in
+                        let row = UITableView.StyleDefaultRow(text: v.title)
+                        row.didSelectAction = {
+                            let getThumbInfo = GetThumbInfo(videos: [v.cmsid])
+                            NicoAPI.request(getThumbInfo)
+                                .onSuccess {
+                                    Logging.d($0.first.debugDescription)
+                                }
+                        }
+                        return row
                     }
                     section.extend(rows)
                 }

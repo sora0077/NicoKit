@@ -48,6 +48,10 @@
 		D99762271B221FE600A48209 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99762261B221FD600A48209 /* APIKit.framework */; };
 		D99762281B22216900A48209 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99762261B221FD600A48209 /* APIKit.framework */; };
 		D99762291B22216900A48209 /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D99762261B221FD600A48209 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D997622B1B2230E500A48209 /* GetThumbInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D997622A1B2230E500A48209 /* GetThumbInfo.swift */; };
+		D997622C1B2230E500A48209 /* GetThumbInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D997622A1B2230E500A48209 /* GetThumbInfo.swift */; };
+		D997622E1B223A1900A48209 /* NicoVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D997622D1B223A1900A48209 /* NicoVideo.swift */; };
+		D997622F1B223A1900A48209 /* NicoVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D997622D1B223A1900A48209 /* NicoVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +127,8 @@
 		D99761E21B2201B800A48209 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		D99761F31B2202AC00A48209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D99762261B221FD600A48209 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		D997622A1B2230E500A48209 /* GetThumbInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetThumbInfo.swift; sourceTree = "<group>"; };
+		D997622D1B223A1900A48209 /* NicoVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicoVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				D910552E1B20C3F000088A37 /* Search.swift */,
+				D997622A1B2230E500A48209 /* GetThumbInfo.swift */,
 			);
 			path = Endpoint;
 			sourceTree = "<group>";
@@ -269,6 +276,7 @@
 		D910552F1B20C3F000088A37 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				D997622D1B223A1900A48209 /* NicoVideo.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -487,6 +495,8 @@
 			files = (
 				D91055311B20C3F000088A37 /* Search.swift in Sources */,
 				D91055331B20C3F000088A37 /* NicoKit.swift in Sources */,
+				D997622E1B223A1900A48209 /* NicoVideo.swift in Sources */,
+				D997622B1B2230E500A48209 /* GetThumbInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +505,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D91055161B20C16B00088A37 /* NicoKitTests.swift in Sources */,
+				D997622F1B223A1900A48209 /* NicoVideo.swift in Sources */,
+				D997622C1B2230E500A48209 /* GetThumbInfo.swift in Sources */,
 				D91055341B20C3F000088A37 /* NicoKit.swift in Sources */,
 				D91055321B20C3F000088A37 /* Search.swift in Sources */,
 			);
