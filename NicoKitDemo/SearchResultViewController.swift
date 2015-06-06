@@ -37,16 +37,7 @@ class SearchResultViewController: UIViewController {
 //                                
 //                            }
                             
-                            let getFlv = GetFlv(id: v.cmsid)
-                            NicoAPI.request(getFlv).onSuccess {
-                                Logging.d($0.debugDescription)
-                            }
-                            
-//                            let getThumbInfo = GetThumbInfo(videos: [v.cmsid])
-//                            NicoAPI.request(getThumbInfo)
-//                                .onSuccess {
-//                                    Logging.d($0.first.debugDescription)
-//                                }
+                            App().playVideo(v.cmsid)
                         }
                         return row
                     }
@@ -63,7 +54,6 @@ class SearchResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
