@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="60z-up-xBF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="60z-up-xBF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -41,6 +42,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1075" y="321"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="E58-2C-XYM">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="dar-mR-9Rg" customClass="LoginViewController" customModule="NicoKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WFF-oD-htv"/>
+                        <viewControllerLayoutGuide type="bottom" id="3mx-99-Eur"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Te-F5-klu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p20-TE-RpX">
+                                <rect key="frame" x="46" y="120" width="508" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gx-pt-5qW">
+                                <rect key="frame" x="46" y="180" width="508" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGq-vj-dZd">
+                                <rect key="frame" x="46" y="240" width="508" height="30"/>
+                                <state key="normal" title="ログイン">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="dar-mR-9Rg" eventType="touchUpInside" id="x0Q-Gb-xXW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p20-TE-RpX" firstAttribute="top" secondItem="WFF-oD-htv" secondAttribute="bottom" constant="100" id="BuE-xk-b0P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p20-TE-RpX" secondAttribute="trailing" constant="30" id="FpS-51-E6G"/>
+                            <constraint firstItem="6gx-pt-5qW" firstAttribute="top" secondItem="p20-TE-RpX" secondAttribute="bottom" constant="30" id="Gu7-ax-UJ8"/>
+                            <constraint firstItem="ZGq-vj-dZd" firstAttribute="width" secondItem="6gx-pt-5qW" secondAttribute="width" id="Kww-am-8kK"/>
+                            <constraint firstItem="ZGq-vj-dZd" firstAttribute="top" secondItem="6gx-pt-5qW" secondAttribute="bottom" constant="30" id="YDt-r3-lAM"/>
+                            <constraint firstAttribute="centerX" secondItem="ZGq-vj-dZd" secondAttribute="centerX" id="ZXv-vr-trg"/>
+                            <constraint firstAttribute="centerX" secondItem="6gx-pt-5qW" secondAttribute="centerX" id="Zyt-ND-feq"/>
+                            <constraint firstItem="ZGq-vj-dZd" firstAttribute="width" secondItem="p20-TE-RpX" secondAttribute="width" id="dqH-zV-YZE"/>
+                            <constraint firstAttribute="centerX" secondItem="p20-TE-RpX" secondAttribute="centerX" id="f8F-ZJ-KfC"/>
+                            <constraint firstItem="p20-TE-RpX" firstAttribute="leading" secondItem="6Te-F5-klu" secondAttribute="leadingMargin" constant="30" id="mj0-1q-CEp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mailaddressField" destination="p20-TE-RpX" id="yjP-Fh-XCc"/>
+                        <outlet property="passwordField" destination="6gx-pt-5qW" id="gdW-Cz-L8t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qI5-UA-BjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1277" y="-438"/>
         </scene>
         <!--Search Result View Controller-->
         <scene sceneID="kFv-Fn-jO2">

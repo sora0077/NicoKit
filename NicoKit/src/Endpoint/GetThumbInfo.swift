@@ -13,7 +13,7 @@ import LoggingKit
 
 public class GetThumbInfo {
     
-    private let videos: [String]
+    public let videos: [String]
     
     public init(videos: [String]) {
         self.videos = videos

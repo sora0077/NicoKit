@@ -12,7 +12,7 @@ import SwiftyJSON
 
 public class Search {
     
-    let query: Query
+    public let query: Query
     
     public init(query: Query) {
         self.query = query

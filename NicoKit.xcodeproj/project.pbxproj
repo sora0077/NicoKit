@@ -18,6 +18,14 @@
 		D91055321B20C3F000088A37 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910552E1B20C3F000088A37 /* Search.swift */; };
 		D91055331B20C3F000088A37 /* NicoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055301B20C3F000088A37 /* NicoKit.swift */; };
 		D91055341B20C3F000088A37 /* NicoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055301B20C3F000088A37 /* NicoKit.swift */; };
+		D9587C741B22C14E00629591 /* GetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C731B22C14E00629591 /* GetSession.swift */; };
+		D9587C751B22C14E00629591 /* GetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C731B22C14E00629591 /* GetSession.swift */; };
+		D9587C771B22C46A00629591 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C761B22C46A00629591 /* Session.swift */; };
+		D9587C781B22C46A00629591 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C761B22C46A00629591 /* Session.swift */; };
+		D9587C7B1B22C93000629591 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C7A1B22C93000629591 /* LoginViewController.swift */; };
+		D9587C7C1B22C93000629591 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C7A1B22C93000629591 /* LoginViewController.swift */; };
+		D9587C801B22CEA600629591 /* dotenv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C7F1B22CEA600629591 /* dotenv.swift */; };
+		D9587C811B22CEA600629591 /* dotenv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C7F1B22CEA600629591 /* dotenv.swift */; };
 		D97BE8931B21657A00C32D59 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */; };
 		D97BE8941B21657A00C32D59 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */; };
 		D99761851B21B11A00A48209 /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761841B21B11A00A48209 /* Ono.framework */; };
@@ -110,6 +118,10 @@
 		D91055231B20C39300088A37 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
 		D910552E1B20C3F000088A37 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		D91055301B20C3F000088A37 /* NicoKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicoKit.swift; sourceTree = "<group>"; };
+		D9587C731B22C14E00629591 /* GetSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSession.swift; sourceTree = "<group>"; };
+		D9587C761B22C46A00629591 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		D9587C7A1B22C93000629591 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D9587C7F1B22CEA600629591 /* dotenv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dotenv.swift; sourceTree = "<group>"; };
 		D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		D99761841B21B11A00A48209 /* Ono.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ono.framework; path = Carthage/Build/iOS/Ono.framework; sourceTree = "<group>"; };
 		D99761891B21DF5D00A48209 /* LoggingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggingKit.framework; path = Carthage/Build/iOS/LoggingKit.framework; sourceTree = "<group>"; };
@@ -269,6 +281,7 @@
 			children = (
 				D910552E1B20C3F000088A37 /* Search.swift */,
 				D997622A1B2230E500A48209 /* GetThumbInfo.swift */,
+				D9587C731B22C14E00629591 /* GetSession.swift */,
 			);
 			path = Endpoint;
 			sourceTree = "<group>";
@@ -277,16 +290,26 @@
 			isa = PBXGroup;
 			children = (
 				D997622D1B223A1900A48209 /* NicoVideo.swift */,
+				D9587C761B22C46A00629591 /* Session.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		D9587C791B22C90C00629591 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D99761E21B2201B800A48209 /* SearchResultViewController.swift */,
+				D9587C7A1B22C93000629591 /* LoginViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		D99761B81B22005300A48209 /* NicoKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D9587C791B22C90C00629591 /* ViewController */,
 				D99761BB1B22005300A48209 /* AppDelegate.swift */,
 				D99761BD1B22005300A48209 /* ViewController.swift */,
-				D99761E21B2201B800A48209 /* SearchResultViewController.swift */,
 				D99761C21B22005300A48209 /* Images.xcassets */,
 				D99761F21B2202AC00A48209 /* Main.storyboard */,
 				D99761C41B22005300A48209 /* LaunchScreen.xib */,
@@ -298,6 +321,7 @@
 		D99761B91B22005300A48209 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9587C7F1B22CEA600629591 /* dotenv.swift */,
 				D99761DF1B22016000A48209 /* LayoutKit.framework */,
 				D99761DE1B22010C00A48209 /* NicoKitDemo-Bridging-Header.h */,
 				D99761BA1B22005300A48209 /* Info.plist */,
@@ -376,6 +400,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D99761D31B22005300A48209 /* Build configuration list for PBXNativeTarget "NicoKitDemo" */;
 			buildPhases = (
+				D9587C7E1B22CE4F00629591 /* ShellScript */,
 				D99761B31B22005300A48209 /* Sources */,
 				D99761B41B22005300A48209 /* Frameworks */,
 				D99761B51B22005300A48209 /* Resources */,
@@ -488,6 +513,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D9587C7E1B22CE4F00629591 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd NicoKitDemo\nruby ./dotenv.rb";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D91054FE1B20C16B00088A37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -495,8 +536,10 @@
 			files = (
 				D91055311B20C3F000088A37 /* Search.swift in Sources */,
 				D91055331B20C3F000088A37 /* NicoKit.swift in Sources */,
+				D9587C771B22C46A00629591 /* Session.swift in Sources */,
 				D997622E1B223A1900A48209 /* NicoVideo.swift in Sources */,
 				D997622B1B2230E500A48209 /* GetThumbInfo.swift in Sources */,
+				D9587C741B22C14E00629591 /* GetSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +547,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9587C781B22C46A00629591 /* Session.swift in Sources */,
 				D91055161B20C16B00088A37 /* NicoKitTests.swift in Sources */,
+				D9587C751B22C14E00629591 /* GetSession.swift in Sources */,
 				D997622F1B223A1900A48209 /* NicoVideo.swift in Sources */,
 				D997622C1B2230E500A48209 /* GetThumbInfo.swift in Sources */,
 				D91055341B20C3F000088A37 /* NicoKit.swift in Sources */,
@@ -516,6 +561,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9587C801B22CEA600629591 /* dotenv.swift in Sources */,
+				D9587C7B1B22C93000629591 /* LoginViewController.swift in Sources */,
 				D99761BE1B22005300A48209 /* ViewController.swift in Sources */,
 				D99761E31B2201B800A48209 /* SearchResultViewController.swift in Sources */,
 				D99761BC1B22005300A48209 /* AppDelegate.swift in Sources */,
@@ -526,6 +573,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9587C811B22CEA600629591 /* dotenv.swift in Sources */,
+				D9587C7C1B22C93000629591 /* LoginViewController.swift in Sources */,
 				D99761D21B22005300A48209 /* NicoKitDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -837,6 +886,7 @@
 				D99761D51B22005300A48209 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D99761D61B22005300A48209 /* Build configuration list for PBXNativeTarget "NicoKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -845,6 +895,7 @@
 				D99761D81B22005300A48209 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

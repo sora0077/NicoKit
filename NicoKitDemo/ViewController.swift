@@ -20,9 +20,10 @@ class ViewController: UIViewController {
         
         let definitions: [(String, () -> Void)] = [
             ("検索", { [weak self] in
-                
-                let vc = from_storyboard(SearchResultViewController.self)
-                self?.navigationController?.pushViewController(vc, animated: true)
+                self?.push(SearchResultViewController.self)
+            }),
+            ("ログイン", { [weak self] in
+                self?.push(LoginViewController.self)
             })
         ]
         
@@ -41,5 +42,10 @@ class ViewController: UIViewController {
     }
 
 
+    private func push<T: UIViewController where T: Storyboardable>(clazz: T.Type) {
+        
+        let vc = from_storyboard(clazz)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
