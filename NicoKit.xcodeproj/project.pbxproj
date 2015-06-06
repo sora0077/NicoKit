@@ -26,6 +26,12 @@
 		D9587C7C1B22C93000629591 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C7A1B22C93000629591 /* LoginViewController.swift */; };
 		D9587C801B22CEA600629591 /* dotenv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C7F1B22CEA600629591 /* dotenv.swift */; };
 		D9587C811B22CEA600629591 /* dotenv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C7F1B22CEA600629591 /* dotenv.swift */; };
+		D9587C831B22DD4200629591 /* GetFlv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C821B22DD4200629591 /* GetFlv.swift */; };
+		D9587C841B22DD4200629591 /* GetFlv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C821B22DD4200629591 /* GetFlv.swift */; };
+		D9587C861B22DDFF00629591 /* Flv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C851B22DDFF00629591 /* Flv.swift */; };
+		D9587C871B22DDFF00629591 /* Flv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C851B22DDFF00629591 /* Flv.swift */; };
+		D9587C891B22E26F00629591 /* WatchVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C881B22E26F00629591 /* WatchVideo.swift */; };
+		D9587C8A1B22E26F00629591 /* WatchVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C881B22E26F00629591 /* WatchVideo.swift */; };
 		D97BE8931B21657A00C32D59 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */; };
 		D97BE8941B21657A00C32D59 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */; };
 		D99761851B21B11A00A48209 /* Ono.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99761841B21B11A00A48209 /* Ono.framework */; };
@@ -122,6 +128,9 @@
 		D9587C761B22C46A00629591 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		D9587C7A1B22C93000629591 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D9587C7F1B22CEA600629591 /* dotenv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dotenv.swift; sourceTree = "<group>"; };
+		D9587C821B22DD4200629591 /* GetFlv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetFlv.swift; sourceTree = "<group>"; };
+		D9587C851B22DDFF00629591 /* Flv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flv.swift; sourceTree = "<group>"; };
+		D9587C881B22E26F00629591 /* WatchVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchVideo.swift; sourceTree = "<group>"; };
 		D97BE8921B21657A00C32D59 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		D99761841B21B11A00A48209 /* Ono.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ono.framework; path = Carthage/Build/iOS/Ono.framework; sourceTree = "<group>"; };
 		D99761891B21DF5D00A48209 /* LoggingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggingKit.framework; path = Carthage/Build/iOS/LoggingKit.framework; sourceTree = "<group>"; };
@@ -282,6 +291,8 @@
 				D910552E1B20C3F000088A37 /* Search.swift */,
 				D997622A1B2230E500A48209 /* GetThumbInfo.swift */,
 				D9587C731B22C14E00629591 /* GetSession.swift */,
+				D9587C821B22DD4200629591 /* GetFlv.swift */,
+				D9587C881B22E26F00629591 /* WatchVideo.swift */,
 			);
 			path = Endpoint;
 			sourceTree = "<group>";
@@ -291,6 +302,7 @@
 			children = (
 				D997622D1B223A1900A48209 /* NicoVideo.swift */,
 				D9587C761B22C46A00629591 /* Session.swift */,
+				D9587C851B22DDFF00629591 /* Flv.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -534,12 +546,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9587C831B22DD4200629591 /* GetFlv.swift in Sources */,
 				D91055311B20C3F000088A37 /* Search.swift in Sources */,
 				D91055331B20C3F000088A37 /* NicoKit.swift in Sources */,
 				D9587C771B22C46A00629591 /* Session.swift in Sources */,
+				D9587C861B22DDFF00629591 /* Flv.swift in Sources */,
 				D997622E1B223A1900A48209 /* NicoVideo.swift in Sources */,
 				D997622B1B2230E500A48209 /* GetThumbInfo.swift in Sources */,
 				D9587C741B22C14E00629591 /* GetSession.swift in Sources */,
+				D9587C891B22E26F00629591 /* WatchVideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,12 +563,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9587C781B22C46A00629591 /* Session.swift in Sources */,
+				D9587C8A1B22E26F00629591 /* WatchVideo.swift in Sources */,
+				D9587C871B22DDFF00629591 /* Flv.swift in Sources */,
 				D91055161B20C16B00088A37 /* NicoKitTests.swift in Sources */,
 				D9587C751B22C14E00629591 /* GetSession.swift in Sources */,
 				D997622F1B223A1900A48209 /* NicoVideo.swift in Sources */,
 				D997622C1B2230E500A48209 /* GetThumbInfo.swift in Sources */,
 				D91055341B20C3F000088A37 /* NicoKit.swift in Sources */,
 				D91055321B20C3F000088A37 /* Search.swift in Sources */,
+				D9587C841B22DD4200629591 /* GetFlv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

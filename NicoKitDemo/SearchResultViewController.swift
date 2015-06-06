@@ -32,11 +32,21 @@ class SearchResultViewController: UIViewController {
                     let rows = videos.map { v -> TableRowBase in
                         let row = UITableView.StyleDefaultRow(text: v.title)
                         row.didSelectAction = {
-                            let getThumbInfo = GetThumbInfo(videos: [v.cmsid])
-                            NicoAPI.request(getThumbInfo)
-                                .onSuccess {
-                                    Logging.d($0.first.debugDescription)
-                                }
+//                            let watchVideo = WatchVideo(id: v.cmsid)
+//                            NicoAPI.request(watchVideo).onSuccess {
+//                                
+//                            }
+                            
+                            let getFlv = GetFlv(id: v.cmsid)
+                            NicoAPI.request(getFlv).onSuccess {
+                                Logging.d($0.debugDescription)
+                            }
+                            
+//                            let getThumbInfo = GetThumbInfo(videos: [v.cmsid])
+//                            NicoAPI.request(getThumbInfo)
+//                                .onSuccess {
+//                                    Logging.d($0.first.debugDescription)
+//                                }
                         }
                         return row
                     }
