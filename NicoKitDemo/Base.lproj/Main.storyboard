@@ -25,19 +25,21 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2b-Ce-bbx">
-                                <rect key="frame" x="360" y="420" width="240" height="180"/>
+                                <rect key="frame" x="400" y="600" width="200" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Y2b-Ce-bbx" secondAttribute="height" multiplier="4:3" id="G86-Wb-QbL"/>
-                                    <constraint firstAttribute="width" constant="240" id="yYz-8K-4NO"/>
+                                    <constraint firstAttribute="height" constant="150" id="qeV-vw-jQI"/>
                                 </constraints>
                                 <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cCO-Id-lsP" appends="YES" id="2yp-Jk-qK9"/>
                                     <segue destination="gAJ-3s-xYF" kind="embed" id="XnF-dH-aCM"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="9AU-Vw-eSU" firstAttribute="top" secondItem="Y2b-Ce-bbx" secondAttribute="bottom" id="83x-GL-s0H"/>
+                            <constraint firstItem="9AU-Vw-eSU" firstAttribute="top" secondItem="Y2b-Ce-bbx" secondAttribute="bottom" constant="-150" id="83x-GL-s0H"/>
                             <constraint firstAttribute="trailing" secondItem="Y2b-Ce-bbx" secondAttribute="trailing" id="QRh-mz-M8H"/>
                             <constraint firstItem="EQd-u7-qzr" firstAttribute="leading" secondItem="6ro-Uj-x9o" secondAttribute="leading" id="WNl-LW-w3Y"/>
                             <constraint firstItem="9AU-Vw-eSU" firstAttribute="top" secondItem="EQd-u7-qzr" secondAttribute="bottom" id="YPU-wf-Rqb"/>
@@ -45,8 +47,18 @@
                             <constraint firstAttribute="trailing" secondItem="EQd-u7-qzr" secondAttribute="trailing" id="y3R-8y-Zju"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playerViewBottom" destination="83x-GL-s0H" id="UzZ-l2-wcm"/>
+                        <outlet property="playerViewHeight" destination="qeV-vw-jQI" id="T9M-a0-MgG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9a-lE-CsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="cCO-Id-lsP">
+                    <connections>
+                        <action selector="dragAction:" destination="I2Y-e8-14E" id="LpK-mH-sia"/>
+                        <outlet property="delegate" destination="I2Y-e8-14E" id="5ki-c3-bFX"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="346" y="-319"/>
         </scene>
@@ -207,7 +219,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kfQ-fq-3te"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="h47-V4-oq5">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
