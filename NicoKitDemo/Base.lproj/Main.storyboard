@@ -35,16 +35,30 @@
                                     <segue destination="gAJ-3s-xYF" kind="embed" id="XnF-dH-aCM"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeI-if-qgh">
+                                <rect key="frame" x="400" y="750" width="200" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="200" id="G4u-co-HfB"/>
+                                    <constraint firstAttribute="height" constant="300" placeholder="YES" id="kAZ-OA-9xO"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Stg-Gx-U84" kind="embed" id="yXL-pV-ypW"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="9AU-Vw-eSU" firstAttribute="top" secondItem="Y2b-Ce-bbx" secondAttribute="bottom" constant="-150" id="83x-GL-s0H"/>
+                            <constraint firstAttribute="trailing" secondItem="GeI-if-qgh" secondAttribute="trailing" id="DWd-bd-ydQ"/>
+                            <constraint firstItem="Y2b-Ce-bbx" firstAttribute="width" secondItem="GeI-if-qgh" secondAttribute="width" id="PSw-n5-Vh7"/>
                             <constraint firstAttribute="trailing" secondItem="Y2b-Ce-bbx" secondAttribute="trailing" id="QRh-mz-M8H"/>
                             <constraint firstItem="EQd-u7-qzr" firstAttribute="leading" secondItem="6ro-Uj-x9o" secondAttribute="leading" id="WNl-LW-w3Y"/>
                             <constraint firstItem="9AU-Vw-eSU" firstAttribute="top" secondItem="EQd-u7-qzr" secondAttribute="bottom" id="YPU-wf-Rqb"/>
+                            <constraint firstItem="9AU-Vw-eSU" firstAttribute="top" secondItem="GeI-if-qgh" secondAttribute="bottom" priority="750" id="gYT-VY-Usi"/>
                             <constraint firstItem="EQd-u7-qzr" firstAttribute="top" secondItem="6ro-Uj-x9o" secondAttribute="top" id="xRQ-fv-jWG"/>
                             <constraint firstAttribute="trailing" secondItem="EQd-u7-qzr" secondAttribute="trailing" id="y3R-8y-Zju"/>
+                            <constraint firstItem="GeI-if-qgh" firstAttribute="top" secondItem="Y2b-Ce-bbx" secondAttribute="bottom" id="zYQ-Zb-e2P"/>
                         </constraints>
                     </view>
                     <connections>
@@ -228,6 +242,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pk5-96-rcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="475" y="-794"/>
+        </scene>
+        <!--Playlist View Controller-->
+        <scene sceneID="dey-bv-Cdu">
+            <objects>
+                <viewController storyboardIdentifier="PlaylistViewController" automaticallyAdjustsScrollViewInsets="NO" id="Stg-Gx-U84" customClass="PlaylistViewController" customModule="NicoKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2bL-Bz-eWD"/>
+                        <viewControllerLayoutGuide type="bottom" id="huD-p4-nWu"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pDc-eA-CVr">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="os8-8G-MAS">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="os8-8G-MAS" secondAttribute="trailing" id="6JD-ml-ily"/>
+                            <constraint firstItem="os8-8G-MAS" firstAttribute="leading" secondItem="pDc-eA-CVr" secondAttribute="leading" id="JVW-wi-FBV"/>
+                            <constraint firstItem="os8-8G-MAS" firstAttribute="top" secondItem="2bL-Bz-eWD" secondAttribute="bottom" id="Q7i-fb-l8M"/>
+                            <constraint firstItem="huD-p4-nWu" firstAttribute="top" secondItem="os8-8G-MAS" secondAttribute="bottom" id="xXB-dz-FTB"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="tableView" destination="os8-8G-MAS" id="39v-Hh-sD2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCs-9G-swN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>

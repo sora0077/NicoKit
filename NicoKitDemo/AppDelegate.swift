@@ -35,9 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    func playVideo(id: String) {
+    func playVideo(v: Search.Video) {
         
-        self.mainController?.playVideo(id)
+        self.mainController?.playVideo(v)
     }
 }
 

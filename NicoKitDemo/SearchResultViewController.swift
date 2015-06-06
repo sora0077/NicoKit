@@ -32,12 +32,7 @@ class SearchResultViewController: UIViewController {
                     let rows = videos.map { v -> TableRowBase in
                         let row = UITableView.StyleDefaultRow(text: v.title)
                         row.didSelectAction = {
-//                            let watchVideo = WatchVideo(id: v.cmsid)
-//                            NicoAPI.request(watchVideo).onSuccess {
-//                                
-//                            }
-                            
-                            App().playVideo(v.cmsid)
+                            App().playVideo(v)
                         }
                         return row
                     }

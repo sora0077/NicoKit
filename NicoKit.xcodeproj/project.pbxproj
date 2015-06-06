@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D90B80571B23415500BDA54F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B80561B23415500BDA54F /* MainViewController.swift */; };
 		D90B80581B23415500BDA54F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B80561B23415500BDA54F /* MainViewController.swift */; };
+		D90B805A1B23683100BDA54F /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B80591B23683100BDA54F /* PlaylistViewController.swift */; };
+		D90B805B1B23683100BDA54F /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B80591B23683100BDA54F /* PlaylistViewController.swift */; };
 		D91055091B20C16B00088A37 /* NicoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D91055081B20C16B00088A37 /* NicoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D910550F1B20C16B00088A37 /* NicoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91055031B20C16B00088A37 /* NicoKit.framework */; };
 		D91055161B20C16B00088A37 /* NicoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055151B20C16B00088A37 /* NicoKitTests.swift */; };
@@ -123,6 +125,7 @@
 
 /* Begin PBXFileReference section */
 		D90B80561B23415500BDA54F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D90B80591B23683100BDA54F /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		D91055031B20C16B00088A37 /* NicoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NicoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91055071B20C16B00088A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91055081B20C16B00088A37 /* NicoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NicoKit.h; sourceTree = "<group>"; };
@@ -326,6 +329,7 @@
 				D99761E21B2201B800A48209 /* SearchResultViewController.swift */,
 				D9587C7A1B22C93000629591 /* LoginViewController.swift */,
 				D9587C8B1B2326EB00629591 /* PlayerViewController.swift */,
+				D90B80591B23683100BDA54F /* PlaylistViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -595,6 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90B805A1B23683100BDA54F /* PlaylistViewController.swift in Sources */,
 				D90B80571B23415500BDA54F /* MainViewController.swift in Sources */,
 				D9587C801B22CEA600629591 /* dotenv.swift in Sources */,
 				D9587C7B1B22C93000629591 /* LoginViewController.swift in Sources */,
@@ -611,6 +616,7 @@
 			files = (
 				D9587C811B22CEA600629591 /* dotenv.swift in Sources */,
 				D9587C8D1B2326EB00629591 /* PlayerViewController.swift in Sources */,
+				D90B805B1B23683100BDA54F /* PlaylistViewController.swift in Sources */,
 				D9587C7C1B22C93000629591 /* LoginViewController.swift in Sources */,
 				D99761D21B22005300A48209 /* NicoKitDemoTests.swift in Sources */,
 				D90B80581B23415500BDA54F /* MainViewController.swift in Sources */,

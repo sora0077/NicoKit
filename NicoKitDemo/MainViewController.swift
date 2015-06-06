@@ -11,6 +11,7 @@ import UIKit
 class MainViewController: UIViewController {
     
     weak var playerViewController: PlayerViewController!
+    weak var playlistViewController: PlaylistViewController!
 
     
     @IBOutlet weak var playerViewHeight: NSLayoutConstraint!
@@ -21,6 +22,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.playerViewController.playlistViewController = self.playlistViewController
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,37 +37,17 @@ class MainViewController: UIViewController {
         switch segue.destinationViewController {
         case let vc as PlayerViewController:
             self.playerViewController = vc
+            vc.delegate = self
+        case let vc as PlaylistViewController:
+            self.playlistViewController = vc
         default:
             break
         }
     }
     
-    func playVideo(id: String) {
+    func playVideo(v: Search.Video) {
         
-        let watchVideo = WatchVideo(id: id)
-        let getFlv = GetFlv(id: id)
-        NicoAPI.request(watchVideo)
-            .flatMap {
-                NicoAPI.request(getFlv)
-            }
-            .onSuccess { [weak self] flv in
-                Queue.main.async {
-                    self?.showPlayerView(flv)
-                }
-            }
-            .onFailure {
-                Logging.e($0)
-            }
-        
-    }
-    
-    private func showPlayerView(flv: Flv) {
-        
-        let item = AVPlayerItem(URL: NSURL(string: flv.url))
-        
-        playerViewController?.queuePlayer.insertItem(item, afterItem: nil)
-        
-        self.animateFullScreen()
+        self.playerViewController.playVideo(v)
     }
     
     private var translation: CGFloat = 0
@@ -75,6 +58,14 @@ class MainViewController: UIViewController {
     }
     
     private var state: State = .SmallScreen
+}
+
+extension MainViewController: PlayerViewControllerDelegate {
+    
+    func playerView(vc: PlayerViewController, willPlay flv: Flv) {
+    
+        self.animateFullScreen()
+    }
 }
 
 extension MainViewController: UIGestureRecognizerDelegate {
@@ -97,7 +88,8 @@ extension MainViewController: UIGestureRecognizerDelegate {
             if b.constant == 0 && p.y > 0 {
                 
             } else {
-                
+                let t = 1 - playlistViewController.view.bounds.width / l.width
+                playlistViewController.view.alpha = 1 - t * t
                 h.constant -= p.y * ratio
                 b.constant -= p.y
             }
@@ -146,6 +138,7 @@ extension MainViewController: UIGestureRecognizerDelegate {
         
         UIView.animateWithDuration(0.2, animations: { () -> Void in
             self.view.layoutIfNeeded()
+            self.playlistViewController.view.alpha = 1
         })
         
         state = .FullScreen
@@ -158,6 +151,7 @@ extension MainViewController: UIGestureRecognizerDelegate {
         
         UIView.animateWithDuration(0.2, animations: { () -> Void in
             self.view.layoutIfNeeded()
+            self.playlistViewController.view.alpha = 0
         })
         
         state = .SmallScreen
