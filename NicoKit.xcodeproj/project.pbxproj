@@ -25,6 +25,9 @@
 		D91055321B20C3F000088A37 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910552E1B20C3F000088A37 /* Search.swift */; };
 		D91055331B20C3F000088A37 /* NicoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055301B20C3F000088A37 /* NicoKit.swift */; };
 		D91055341B20C3F000088A37 /* NicoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91055301B20C3F000088A37 /* NicoKit.swift */; };
+		D9187A651B242DB100DB73BC /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99761E21B2201B800A48209 /* SearchResultViewController.swift */; };
+		D9187A6A1B24341C00DB73BC /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9187A691B24341C00DB73BC /* SearchTableViewController.swift */; };
+		D9187A6B1B24341C00DB73BC /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9187A691B24341C00DB73BC /* SearchTableViewController.swift */; };
 		D9587C741B22C14E00629591 /* GetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C731B22C14E00629591 /* GetSession.swift */; };
 		D9587C751B22C14E00629591 /* GetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C731B22C14E00629591 /* GetSession.swift */; };
 		D9587C771B22C46A00629591 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C761B22C46A00629591 /* Session.swift */; };
@@ -141,6 +144,7 @@
 		D91055231B20C39300088A37 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
 		D910552E1B20C3F000088A37 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		D91055301B20C3F000088A37 /* NicoKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicoKit.swift; sourceTree = "<group>"; };
+		D9187A691B24341C00DB73BC /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		D9587C731B22C14E00629591 /* GetSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSession.swift; sourceTree = "<group>"; };
 		D9587C761B22C46A00629591 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		D9587C7A1B22C93000629591 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -332,6 +336,7 @@
 		D9587C791B22C90C00629591 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D9187A691B24341C00DB73BC /* SearchTableViewController.swift */,
 				D99761E21B2201B800A48209 /* SearchResultViewController.swift */,
 				D90B80611B23816000BDA54F /* RankingResultViewController.swift */,
 				D9587C7A1B22C93000629591 /* LoginViewController.swift */,
@@ -615,6 +620,7 @@
 				D9587C7B1B22C93000629591 /* LoginViewController.swift in Sources */,
 				D99761BE1B22005300A48209 /* ViewController.swift in Sources */,
 				D99761E31B2201B800A48209 /* SearchResultViewController.swift in Sources */,
+				D9187A6A1B24341C00DB73BC /* SearchTableViewController.swift in Sources */,
 				D99761BC1B22005300A48209 /* AppDelegate.swift in Sources */,
 				D9587C8C1B2326EB00629591 /* PlayerViewController.swift in Sources */,
 			);
@@ -625,11 +631,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9587C811B22CEA600629591 /* dotenv.swift in Sources */,
+				D9187A651B242DB100DB73BC /* SearchResultViewController.swift in Sources */,
 				D9587C8D1B2326EB00629591 /* PlayerViewController.swift in Sources */,
 				D90B805B1B23683100BDA54F /* PlaylistViewController.swift in Sources */,
 				D9587C7C1B22C93000629591 /* LoginViewController.swift in Sources */,
 				D99761D21B22005300A48209 /* NicoKitDemoTests.swift in Sources */,
 				D90B80581B23415500BDA54F /* MainViewController.swift in Sources */,
+				D9187A6B1B24341C00DB73BC /* SearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

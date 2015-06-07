@@ -57,7 +57,7 @@ class PlayerViewController: AVPlayerViewController {
         let watchVideo = WatchVideo(id: id)
         NicoAPI.request(watchVideo)
             .map {
-                GetFlv(id: $0 ??  id)
+                GetFlv(id: $0 ?? id)
             }
             .flatMap {
                 NicoAPI.request($0)

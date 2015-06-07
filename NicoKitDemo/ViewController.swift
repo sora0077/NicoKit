@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         let definitions: [(String, () -> Void)] = [
             ("検索", { [weak self] in
-                self?.push(SearchResultViewController.self)
+                self?.push(SearchTableViewController.self)
             }),
             ("ランキング", { [weak self] in
                 self?.push(RankingResultViewController.self)

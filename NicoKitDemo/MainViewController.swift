@@ -107,10 +107,10 @@ extension MainViewController: UIGestureRecognizerDelegate {
             if b.constant == 0 && p.y > 0 {
                 
             } else {
-                let t = 1 - playlistViewController.view.bounds.width / l.width
-                playlistViewController.view.alpha = 1 - t * t
                 h.constant -= p.y * ratio
                 b.constant -= p.y
+                let t = 1 - h.constant / l.width
+                playlistViewController.view.alpha = 1 - t * t
             }
         } else {
             h.constant = 150
@@ -124,8 +124,6 @@ extension MainViewController: UIGestureRecognizerDelegate {
         }
         
         translation += p.y
-        
-        Logging.d(translation)
     
         if sender.state == .Ended {
             

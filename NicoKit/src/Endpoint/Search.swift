@@ -64,7 +64,7 @@ extension Search {
                 let json = JSON(data: d)
                 
                 if json["errid"] != nil {
-                    return .Failure(NSError())
+                    return .Failure(error(.ParseError, json["desc"].string ?? "unknown"))
                 }
                 
                 if json["endofstream"] == nil {
@@ -201,6 +201,17 @@ public extension Search {
             case MylistCounter = "mylist_counter"
             case CommentCounter = "comment_counter"
             case LengthSeconds = "length_seconds"
+            
+            public static var allValues: [SortBy] {
+                return [
+                    .LastCommentTime,
+                    .ViewCounter,
+                    .StartTime,
+                    .MylistCounter,
+                    .CommentCounter,
+                    .LengthSeconds
+                ]
+            }
         }
         
         public enum SearchType {

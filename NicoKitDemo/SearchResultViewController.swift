@@ -12,6 +12,8 @@ class SearchResultViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var query: Search.Query!
+    
     deinit {
         Logging.d("")
     }
@@ -20,9 +22,8 @@ class SearchResultViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.tableView.controller = TableController(responder: self)
         
-        let query = Search.Query(type: .Tag("Sims4"))
+        self.tableView.controller = TableController(responder: self)
         
         let search = Search(query: query)
         
