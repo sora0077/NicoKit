@@ -12,13 +12,16 @@ class RankingResultViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var category: GetRanking.Category!
+    var period: GetRanking.Period!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.tableView.controller = TableController(responder: self)
         
-        let ranking = GetRanking(period: .Hourly)
+        let ranking = GetRanking(period: period, category: category)
         
         
         NicoAPI.request(ranking)

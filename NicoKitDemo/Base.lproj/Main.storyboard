@@ -36,7 +36,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeI-if-qgh">
-                                <rect key="frame" x="0.0" y="750" width="600" height="300"/>
+                                <rect key="frame" x="400" y="750" width="600" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="250" constant="200" id="G4u-co-HfB"/>
                                     <constraint firstAttribute="height" constant="300" placeholder="YES" id="kAZ-OA-9xO"/>
@@ -55,11 +55,17 @@
                             <constraint firstItem="EQd-u7-qzr" firstAttribute="leading" secondItem="6ro-Uj-x9o" secondAttribute="leading" id="WNl-LW-w3Y"/>
                             <constraint firstItem="EQd-u7-qzr" firstAttribute="width" secondItem="GeI-if-qgh" secondAttribute="width" id="XST-jg-kH2"/>
                             <constraint firstItem="9AU-Vw-eSU" firstAttribute="top" secondItem="EQd-u7-qzr" secondAttribute="bottom" id="YPU-wf-Rqb"/>
+                            <constraint firstItem="Y2b-Ce-bbx" firstAttribute="leading" secondItem="GeI-if-qgh" secondAttribute="leading" id="fOm-n8-iDa"/>
                             <constraint firstItem="9AU-Vw-eSU" firstAttribute="top" secondItem="GeI-if-qgh" secondAttribute="bottom" priority="750" id="gYT-VY-Usi"/>
                             <constraint firstItem="EQd-u7-qzr" firstAttribute="top" secondItem="6ro-Uj-x9o" secondAttribute="top" id="xRQ-fv-jWG"/>
                             <constraint firstAttribute="trailing" secondItem="EQd-u7-qzr" secondAttribute="trailing" id="y3R-8y-Zju"/>
                             <constraint firstItem="GeI-if-qgh" firstAttribute="top" secondItem="Y2b-Ce-bbx" secondAttribute="bottom" id="zYQ-Zb-e2P"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Ss-vb-3EZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="playerViewBottom" destination="83x-GL-s0H" id="UzZ-l2-wcm"/>
@@ -374,6 +380,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RO3-Pf-hGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2578.5" y="1031.5"/>
+        </scene>
+        <!--Ranking Select View Controller-->
+        <scene sceneID="nHW-Gy-Q2Q">
+            <objects>
+                <viewController storyboardIdentifier="RankingSelectViewController" id="l6n-AF-mcn" customClass="RankingSelectViewController" customModule="NicoKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yM6-49-E26"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Nl-rs-5GL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eAY-hX-OLd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zBs-NA-Q6I">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zBs-NA-Q6I" secondAttribute="trailing" id="78k-dz-oYo"/>
+                            <constraint firstItem="0Nl-rs-5GL" firstAttribute="top" secondItem="zBs-NA-Q6I" secondAttribute="bottom" id="h4f-fH-uxw"/>
+                            <constraint firstItem="zBs-NA-Q6I" firstAttribute="top" secondItem="eAY-hX-OLd" secondAttribute="top" id="vhv-hl-Gzg"/>
+                            <constraint firstItem="zBs-NA-Q6I" firstAttribute="leading" secondItem="eAY-hX-OLd" secondAttribute="leading" id="zyk-tO-tJx"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="periodControl" destination="AjF-u4-wXm" id="Dc8-eo-m9P"/>
+                        <outlet property="tableView" destination="zBs-NA-Q6I" id="1gY-WN-9gy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Rl-Xg-WNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="AjF-u4-wXm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="毎時"/>
+                        <segment title="24時間"/>
+                        <segment title="週間"/>
+                        <segment title="月間"/>
+                    </segments>
+                </segmentedControl>
+            </objects>
+            <point key="canvasLocation" x="3278" y="1008"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v2P-ph-n6n">

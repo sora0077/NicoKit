@@ -28,6 +28,8 @@
 		D9187A651B242DB100DB73BC /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99761E21B2201B800A48209 /* SearchResultViewController.swift */; };
 		D9187A6A1B24341C00DB73BC /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9187A691B24341C00DB73BC /* SearchTableViewController.swift */; };
 		D9187A6B1B24341C00DB73BC /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9187A691B24341C00DB73BC /* SearchTableViewController.swift */; };
+		D9187A6D1B245F3E00DB73BC /* RankingSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9187A6C1B245F3E00DB73BC /* RankingSelectViewController.swift */; };
+		D9187A6E1B245F3E00DB73BC /* RankingSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9187A6C1B245F3E00DB73BC /* RankingSelectViewController.swift */; };
 		D9587C741B22C14E00629591 /* GetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C731B22C14E00629591 /* GetSession.swift */; };
 		D9587C751B22C14E00629591 /* GetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C731B22C14E00629591 /* GetSession.swift */; };
 		D9587C771B22C46A00629591 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9587C761B22C46A00629591 /* Session.swift */; };
@@ -145,6 +147,7 @@
 		D910552E1B20C3F000088A37 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		D91055301B20C3F000088A37 /* NicoKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicoKit.swift; sourceTree = "<group>"; };
 		D9187A691B24341C00DB73BC /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		D9187A6C1B245F3E00DB73BC /* RankingSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingSelectViewController.swift; sourceTree = "<group>"; };
 		D9587C731B22C14E00629591 /* GetSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSession.swift; sourceTree = "<group>"; };
 		D9587C761B22C46A00629591 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		D9587C7A1B22C93000629591 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -338,6 +341,7 @@
 			children = (
 				D9187A691B24341C00DB73BC /* SearchTableViewController.swift */,
 				D99761E21B2201B800A48209 /* SearchResultViewController.swift */,
+				D9187A6C1B245F3E00DB73BC /* RankingSelectViewController.swift */,
 				D90B80611B23816000BDA54F /* RankingResultViewController.swift */,
 				D9587C7A1B22C93000629591 /* LoginViewController.swift */,
 				D9587C8B1B2326EB00629591 /* PlayerViewController.swift */,
@@ -617,6 +621,7 @@
 				D90B805A1B23683100BDA54F /* PlaylistViewController.swift in Sources */,
 				D90B80571B23415500BDA54F /* MainViewController.swift in Sources */,
 				D9587C801B22CEA600629591 /* dotenv.swift in Sources */,
+				D9187A6D1B245F3E00DB73BC /* RankingSelectViewController.swift in Sources */,
 				D9587C7B1B22C93000629591 /* LoginViewController.swift in Sources */,
 				D99761BE1B22005300A48209 /* ViewController.swift in Sources */,
 				D99761E31B2201B800A48209 /* SearchResultViewController.swift in Sources */,
@@ -631,6 +636,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9587C811B22CEA600629591 /* dotenv.swift in Sources */,
+				D9187A6E1B245F3E00DB73BC /* RankingSelectViewController.swift in Sources */,
 				D9187A651B242DB100DB73BC /* SearchResultViewController.swift in Sources */,
 				D9587C8D1B2326EB00629591 /* PlayerViewController.swift in Sources */,
 				D90B805B1B23683100BDA54F /* PlaylistViewController.swift in Sources */,
