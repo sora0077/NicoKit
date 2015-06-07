@@ -8,6 +8,7 @@
 
 import Foundation
 import APIKit
+import LoggingKit
 
 public class WatchVideo {
     
@@ -20,7 +21,7 @@ public class WatchVideo {
 
 extension WatchVideo: RequestToken {
     
-    public typealias Response = ()
+    public typealias Response = String?
     public typealias SerializedType = NSData
     
     public var method: HTTPMethod {
@@ -52,6 +53,10 @@ extension WatchVideo {
     
     public static func transform(request: NSURLRequest, response: NSHTTPURLResponse?, object: SerializedType) -> Result<Response> {
         
-        return Result(())
+        if let url = response?.URL?.path where request.URL?.path != url {
+            return Result(split(url, isSeparator: { $0 == "/" }).last)
+        }
+        
+        return Result(nil)
     }
 }

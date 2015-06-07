@@ -13,6 +13,8 @@ import AVFoundation
 protocol PlayerViewControllerDelegate: NSObjectProtocol {
     
     func playerView(vc: PlayerViewController, willPlay flv: Flv)
+    
+    func playerViewQueueingItemIsEmpty(vc: PlayerViewController)
 }
 
 class PlayerViewController: AVPlayerViewController {
@@ -43,25 +45,34 @@ class PlayerViewController: AVPlayerViewController {
     
     func playVideo(v: Search.Video) {
         
-        let id = v.cmsid
+        self._playVideo(v.cmsid, title: v.title)
+    }
+    
+    func playVideo(v: GetRanking.Video) {
+        
+        self._playVideo(v.id, title: v.title)
+    }
+    
+    private func _playVideo(id: String, title: String) {
         let watchVideo = WatchVideo(id: id)
-        let getFlv = GetFlv(id: id)
         NicoAPI.request(watchVideo)
+            .map {
+                GetFlv(id: $0 ??  id)
+            }
             .flatMap {
-                NicoAPI.request(getFlv)
+                NicoAPI.request($0)
             }
             .onSuccess { [weak self] flv in
                 Queue.main.async {
                     if let strong = self {
                         strong.insertQueue(flv)
-                        strong.playlistViewController.insertList(v.title)
+                        strong.playlistViewController.insertList(title)
                     }
                 }
             }
             .onFailure {
                 Logging.e($0)
             }
-        
     }
 
     private func insertQueue(flv: Flv) {

@@ -16,5 +16,12 @@ ENV.each {|k, v|
     end
 }
 
+unless ENV["DEMO_NICO_MAILADDRESS"] then
+  f.puts "    static let DEMO_NICO_MAILADDRESS = \"\""
+end
+unless ENV["DEMO_NICO_PASSWORD"] then
+  f.puts "    static let DEMO_NICO_PASSWORD = \"\""
+end
+
 f.puts "}"
 end

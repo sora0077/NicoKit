@@ -67,6 +67,10 @@ extension GetFlv {
             return Result.Failure(error(.ParseError, ""))
         }
         
+        if let e = dict["error"] {
+            return Result.Failure(error(.ParseError, e))
+        }
+        
         return Result(Flv.fromGetFlv(dict))
     }
 }

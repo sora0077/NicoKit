@@ -22,6 +22,9 @@ class ViewController: UIViewController {
             ("検索", { [weak self] in
                 self?.push(SearchResultViewController.self)
             }),
+            ("ランキング", { [weak self] in
+                self?.push(RankingResultViewController.self)
+            }),
             ("ログイン", { [weak self] in
                 self?.push(LoginViewController.self)
             })

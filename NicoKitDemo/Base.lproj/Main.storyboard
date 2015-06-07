@@ -206,6 +206,39 @@
             </objects>
             <point key="canvasLocation" x="2586" y="321"/>
         </scene>
+        <!--Ranking Result View Controller-->
+        <scene sceneID="Syv-Zm-jlg">
+            <objects>
+                <viewController storyboardIdentifier="RankingResultViewController" id="jze-PY-AZw" customClass="RankingResultViewController" customModule="NicoKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Chr-ce-tBK"/>
+                        <viewControllerLayoutGuide type="bottom" id="TTH-Qo-GTh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iTp-TG-pqF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mfA-8a-44k">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mfA-8a-44k" firstAttribute="leading" secondItem="iTp-TG-pqF" secondAttribute="leading" id="1Rw-4l-6Gu"/>
+                            <constraint firstAttribute="trailing" secondItem="mfA-8a-44k" secondAttribute="trailing" id="Avf-bD-0S0"/>
+                            <constraint firstItem="mfA-8a-44k" firstAttribute="top" secondItem="iTp-TG-pqF" secondAttribute="top" id="XCj-J6-qI1"/>
+                            <constraint firstItem="TTH-Qo-GTh" firstAttribute="top" secondItem="mfA-8a-44k" secondAttribute="bottom" id="f48-hj-eId"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="mfA-8a-44k" id="diB-Ez-UDY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXt-Pg-dgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3278" y="321"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="v2P-ph-n6n">
             <objects>

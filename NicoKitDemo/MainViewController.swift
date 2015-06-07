@@ -50,6 +50,11 @@ class MainViewController: UIViewController {
         self.playerViewController.playVideo(v)
     }
     
+    func playVideo(v: GetRanking.Video) {
+        
+        self.playerViewController.playVideo(v)
+    }
+    
     private var translation: CGFloat = 0
     
     private enum State {
@@ -65,6 +70,20 @@ extension MainViewController: PlayerViewControllerDelegate {
     func playerView(vc: PlayerViewController, willPlay flv: Flv) {
     
         self.animateFullScreen()
+    }
+    
+    func playerViewQueueingItemIsEmpty(vc: PlayerViewController) {
+        
+        
+        playerViewHeight.constant = 150
+        playerViewBottom.constant = -150
+        
+        UIView.animateWithDuration(0.2, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+            self.playlistViewController.view.alpha = 0
+        })
+        
+        state = .SmallScreen
     }
 }
 

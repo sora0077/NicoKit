@@ -12,8 +12,9 @@ import UIKit
 let NicoAPI = API()
 
 
-func App() -> AppDelegate! {
-    return UIApplication.sharedApplication().delegate as? AppDelegate
+func App() -> MainViewController! {
+    let d = UIApplication.sharedApplication().delegate as? AppDelegate
+    return d?.mainController
 }
 
 
@@ -35,9 +36,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    func playVideo(v: Search.Video) {
-        
-        self.mainController?.playVideo(v)
-    }
 }
 
