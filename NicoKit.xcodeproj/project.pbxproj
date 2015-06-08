@@ -499,6 +499,11 @@
 					};
 					D99761B61B22005300A48209 = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					D99761CA1B22005300A48209 = {
 						CreatedOnToolsVersion = 6.3.1;

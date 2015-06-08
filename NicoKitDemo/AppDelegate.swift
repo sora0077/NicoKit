@@ -31,10 +31,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         LOGGING_VERBOSE()
         
+        let session = AVAudioSession.sharedInstance()
+        session.setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        session.setActive(true, error: nil)
+        
+        
         self.mainController = self.window?.rootViewController as? MainViewController
         
         return true
     }
 
+    func applicationDidEnterBackground(application: UIApplication) {
+        App().playerViewController.play()
+    }
 }
 

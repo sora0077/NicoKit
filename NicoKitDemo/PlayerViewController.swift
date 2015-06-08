@@ -43,6 +43,9 @@ class PlayerViewController: AVPlayerViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func play() {
+    }
+    
     func playVideo(v: Search.Video) {
         
         self._playVideo(v.cmsid, title: v.title)
